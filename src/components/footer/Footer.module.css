@@ -1,0 +1,46 @@
+/* ====== БАЗОВЫЕ СТИЛИ (мобильные устройства по умолчанию) ====== */
+.footer {
+  min-height: 100px;
+  background-color: #303030;
+  padding: 20px 5px 20px 5px;
+  color: #fff;
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.footer .subtitle {
+  font-size: 14px;
+}
+.footer .link {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+.footer .call {
+  text-align: right;
+}
+
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 45px 0 50px 0;
+    min-height: 180px;
+  }
+  .footer .container {
+  }
+  .footer .subtitle {
+    font-size: 20px;
+  }
+  .footer .link {
+    font-size: 16px;
+  }
+}

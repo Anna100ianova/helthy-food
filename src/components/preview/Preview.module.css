@@ -1,0 +1,102 @@
+.preview {
+  padding: 28px 0 100px 0;
+  position: relative;
+}
+.container {
+  max-width: 767px;
+  margin: 0 auto;
+}
+.bgc_blue {
+  position: absolute;
+  right: 0;
+  top: -155px;
+  width: 50vw;
+  height: 900px;
+  background: rgba(146, 242, 255, 0.15);
+  z-index: -1;
+}
+.tabcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* width: 1130px; */
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+.preview__life {
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+  .preview {
+    padding: 32px 0 120px 0;
+    position: relative;
+  }
+  .container {
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+  .bgc_blue {
+    position: absolute;
+    right: 0;
+    top: -155px;
+    width: 50vw;
+    height: 900px;
+    background: rgba(146, 242, 255, 0.15);
+    z-index: -1;
+  }
+  .tabcontainer {
+    display: flex;
+    flex-direction: column;
+
+    /* width: 1130px; */
+    margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  }
+  .preview__life {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .preview {
+    padding: 28px 0 100px 0;
+    position: relative;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .bgc_blue {
+    position: absolute;
+    right: 0;
+    top: -155px;
+    width: 50vw;
+    height: 900px;
+    background: rgba(146, 242, 255, 0.15);
+    z-index: -1;
+  }
+  .tabcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 1130px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  }
+  .preview__life {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 35px;
+  }
+}

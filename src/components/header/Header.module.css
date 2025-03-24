@@ -1,0 +1,123 @@
+/* ====== БАЗОВЫЕ СТИЛИ (мобильные устройства по умолчанию) ====== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header__left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__logo {
+  max-width: 100px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.header__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  color: #303030;
+}
+
+.header__link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 110%;
+  left: -5%;
+  bottom: -1px;
+  z-index: -1;
+  height: 8px;
+  background: #54ed39;
+}
+
+.btn {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: 0;
+  width: 100%;
+}
+
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 70px;
+  }
+
+  .header__left-block {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .header__logo {
+    max-width: 150px;
+    padding-right: 20px;
+  }
+
+  .header__links {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .header__link {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    width: auto;
+    padding: 10px 20px;
+  }
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .header {
+    padding: 30px 100px;
+  }
+
+  .header__logo {
+    max-width: 170px;
+    padding-right: 40px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    margin-right: 45px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}

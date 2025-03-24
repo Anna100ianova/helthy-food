@@ -1,0 +1,127 @@
+/* ====== БАЗОВЫЕ СТИЛИ (мобильные устройства по умолчанию) ====== */
+.order {
+  padding-bottom: 20px;
+}
+.order .title {
+  text-align: center;
+}
+.order__form {
+  margin-top: 20px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.order__form img {
+  display: none;
+}
+.order__input {
+  padding: 8px 16px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  outline: 0;
+  min-width: 248px;
+}
+.title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.container {
+  max-width: 767px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: 0;
+  min-width: 248px;
+}
+.btn_dark {
+  background-color: #303030;
+  color: #fff;
+  border: none;
+}
+
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .container {
+    max-width: 1023px;
+  }
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .order {
+    padding-bottom: 80px;
+  }
+  .order .title {
+    font-size: 36px;
+  }
+  .order__form {
+    margin-top: 70px;
+    padding: 0 100px;
+    flex-direction: row;
+  }
+  .order__form img {
+    transform: scale(1.5);
+    display: block;
+  }
+  .order__input {
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+    outline: 0;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 220px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s all;
+    outline: 0;
+  }
+  .btn_dark {
+    background-color: #303030;
+    color: #fff;
+    border: none;
+  }
+  .btn_min {
+    height: 50px;
+  }
+}

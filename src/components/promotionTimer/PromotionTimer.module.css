@@ -1,0 +1,59 @@
+/* ====== БАЗОВЫЕ СТИЛИ (мобильные устройства по умолчанию) ====== */
+.promotion__timer {
+  width: 50%;
+}
+.promotion__timer .title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.promotion__timer .timer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promotion__timer .timer__block {
+  width: 64px;
+  height: 86px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+.promotion__timer .timer__block span {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .promotion__timer .title {
+    text-align: right;
+    font-size: 36px;
+    padding: 0;
+  }
+  .promotion__timer .timer {
+    margin-top: 60px;
+    padding-left: 95px;
+  }
+  .promotion__timer .timer__block {
+    width: 102px;
+    height: 120px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .promotion__timer .timer__block span {
+    font-size: 56px;
+  }
+}

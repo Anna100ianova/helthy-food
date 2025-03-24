@@ -1,0 +1,57 @@
+/* ====== БАЗОВЫЕ СТИЛИ (мобильные устройства по умолчанию) ====== */
+.promotion {
+  padding: 40px 0 40px 0;
+  position: relative;
+}
+.promotion .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promotion .bgc_y {
+  position: absolute;
+  width: 50%;
+  height: 499px;
+  background: rgba(243, 255, 222, 0.35);
+  z-index: -1;
+  top: -50px;
+  left: 0;
+}
+
+.promotion__text {
+  width: 50%;
+  font-size: 30px;
+}
+.promotion__descr {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.promotion__descr span {
+  font-weight: 700;
+  font-size: 22px;
+}
+/* ====== ПЛАНШЕТЫ (768px и больше) ====== */
+@media (min-width: 768px) {
+}
+
+/* ====== ДЕСКТОП (1024px и больше) ====== */
+@media (min-width: 1024px) {
+  .promotion {
+    padding: 70px 0 240px 0;
+  }
+  .promotion .container {
+    flex-direction: row;
+    align-items: start;
+  }
+  .promotion__text {
+    font-size: 36px;
+  }
+  .promotion__descr {
+    margin-top: 40px;
+  }
+  .promotion__descr span {
+    font-size: 26px;
+  }
+}
