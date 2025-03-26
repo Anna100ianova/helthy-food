@@ -1,7 +1,7 @@
 import style from "./Header.module.css";
 import logo from "../icons/logo.svg";
 
-export const Header = () => {
+export const Header = ({ openModal }) => {
   return (
     <>
       <header className={style.header}>
@@ -19,7 +19,9 @@ export const Header = () => {
           </nav>
         </div>
         <div className={style["header__right-block"]}>
-          <button className={style.btn}>Связаться с нами</button>
+          <button onClick={openModal} className={style.btn}>
+            Связаться с нами
+          </button>
         </div>
       </header>
     </>

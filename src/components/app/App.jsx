@@ -12,9 +12,13 @@ import { Modal } from "../modal/Modal";
 import "./App.css";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <>
-      <Header />
+      <Header openModal={openModal} />
       <SidePanel />
       <Preview />
       <div className="divider" />
@@ -27,7 +31,7 @@ function App() {
       <div className="divider" />
       <Promotion />
       <Footer />
-      {/* <Modal /> */}
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }
