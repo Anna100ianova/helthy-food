@@ -2,7 +2,7 @@ import { OfferSlider } from "../offerSlider/OfferSlider";
 
 import style from "./Offer.module.css";
 
-export const Offer = () => {
+export const Offer = ({ openModal }) => {
   return (
     <div className={style.offer}>
       <div className={style.bgc_y}></div>
@@ -18,7 +18,11 @@ export const Offer = () => {
           </div>
         </div>
         <div className={style.offer__action}>
-          <button data-modal className={`${style.btn} ${style.btn_dark}`}>
+          <button
+            data-modal
+            className={`${style.btn} ${style.btn_dark}`}
+            onClick={openModal}
+          >
             Связаться с нами
           </button>
         </div>

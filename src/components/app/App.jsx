@@ -12,17 +12,17 @@ import { Modal } from "../modal/Modal";
 import "./App.css";
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const toggle = () => setIsModalOpen((isModalOpen) => !isModalOpen);
+
   return (
     <>
-      <Header openModal={openModal} />
+      <Header openModal={toggle} />
       <SidePanel />
       <Preview />
       <div className="divider" />
-      <Offer />
+      <Offer openModal={toggle} />
       <div className="divider" />
       <Calculating />
       <div className="divider" />
@@ -31,7 +31,7 @@ function App() {
       <div className="divider" />
       <Promotion />
       <Footer />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <Modal isOpen={isModalOpen} onClose={toggle} />
     </>
   );
 }
