@@ -1,4 +1,5 @@
 import style from "./PromotionTimer.module.css";
+import { useState } from "react";
 
 export const PromotionTimer = () => {
   return (

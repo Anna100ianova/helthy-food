@@ -5,7 +5,7 @@ export const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const rendered = (
-    <div className={style.modal} onClick={(e) => e.stopPropagation()}>
+    <div className={style.modal}>
       <div className={style.modal__dialog}>
         <div className={style.modal__content}>
           <button data-close className={style.modal__close} onClick={onClose}>
